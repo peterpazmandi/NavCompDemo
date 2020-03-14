@@ -23,6 +23,10 @@
         <action
             android:id="@+id/action_fragment_2_to_fragment_3"
             app:destination="@id/fragment_3" />
+        <argument
+            android:name="passedData"
+            app:argType="string"
+            android:defaultValue="No passed data" />
     </fragment>
     <fragment
         android:id="@+id/fragment_3"

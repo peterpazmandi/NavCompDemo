@@ -7,12 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 
 import com.inspirecoding.navcompdemo.R
 import kotlinx.android.synthetic.main.fragment_2.*
 
 class Fragment_2 : Fragment()
 {
+    private val args : Fragment_2Args by navArgs()
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View?
     {
         // Inflate the layout for this fragment
@@ -28,5 +31,11 @@ class Fragment_2 : Fragment()
             val navController: NavController = Navigation.findNavController(it)
             navController.navigate(Fragment_2Directions.actionFragment2ToFragment3())
         }
+
+        tv_passed_data.text = args.passedData
+
+//        arguments?.let {
+//            tv_passed_data.text = Fragment_2Args.fromBundle(it).passedData
+//        }
     }
 }

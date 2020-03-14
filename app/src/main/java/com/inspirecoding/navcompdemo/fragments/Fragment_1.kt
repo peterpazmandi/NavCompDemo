@@ -25,7 +25,9 @@ class Fragment_1 : Fragment()
 
         btn_fragment_1.setOnClickListener {
             val navController: NavController = Navigation.findNavController(it)
-            val action = Fragment_1Directions.actionFragment1ToFragment2()
+            val action = Fragment_1Directions.actionFragment1ToFragment2(
+                et_fragment_1.text.toString()
+            )
             navController.navigate(action)
         }
     }
