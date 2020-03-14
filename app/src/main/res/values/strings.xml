@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NavCompDemo</string>
+
+    <string name="inspire_coding"><b>Inspire Coding</b></string>
+    <string name="inspirecoding_dot_app">inspirecoding.app</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="fragment_3">Fragment 3</string>
+    <string name="fragment_4">Fragment 4</string>
+    <string name="fragment_5">Fragment 5</string>
+
+    <string name="type_something">Type something</string>
+    <string name="open_fragment_1">Open Fragment_1</string>
+    <string name="open_fragment_2">Open Fragment_2</string>
+    <string name="open_fragment_3">Open Fragment_3</string>
+    <string name="open_fragment_4">Open Fragment_4</string>
+    <string name="open_fragment_5">Open Fragment_5</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="passed_data">Passed data</string>
+</resources>
