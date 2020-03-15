@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linear_gradient_grey"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingLeft="20dp"
+    android:paddingStart="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/inspire_coding_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inspire_coding"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inspirecoding_dot_app"
+        android:textSize="16sp"
+        android:textColor="@color/orange"/>
+
+</LinearLayout>
