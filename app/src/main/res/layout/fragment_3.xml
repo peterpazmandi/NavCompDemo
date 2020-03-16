@@ -8,6 +8,21 @@
     android:orientation="vertical"
     tools:context=".fragments.Fragment_3">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fragment_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="VectorDrawableCompat" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

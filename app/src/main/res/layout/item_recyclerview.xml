@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/et_recyclerView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_recyclerView_priority"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/et_recyclerView_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_recyclerView_priority"
+        app:layout_constraintTop_toBottomOf="@+id/et_recyclerView_title"
+        tools:text="Description" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_recyclerView_priority"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_recyclerView_title"
+        tools:src="@drawable/prio_green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

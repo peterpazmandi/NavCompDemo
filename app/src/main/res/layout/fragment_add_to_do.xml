@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddToDoFragment"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_addItem_title"
+        android:hint="@string/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_addItem_description"
+        android:hint="@string/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_addItem_prio_low"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/prio_green"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_addItem_prio_medium"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/prio_orange" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_addItem_prio_high"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/prio_red"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_addItem_cancel"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_addItem_ok"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+
+    </LinearLayout>
+
+</LinearLayout>
