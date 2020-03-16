@@ -16,10 +16,20 @@ import kotlinx.android.synthetic.main.fragment_add_to_do.view.*
 class AddToDoFragment : DialogFragment()
 {
     private lateinit var rootView: View
+    private val fragment3Viewmodel by navGraphViewModels<Fragment_3_ViewModel>(R.id.navigation_graph)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View?
     {
         rootView = inflater.inflate(R.layout.fragment_add_to_do, container, false)
+
+        rootView.btn_addItem_ok.setOnClickListener {
+            fragment3Viewmodel.addNewToDo(createToDo())
+            dismiss()
+        }
+
+        rootView.btn_addItem_cancel.setOnClickListener {
+            dismiss()
+        }
 
         return rootView
     }

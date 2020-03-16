@@ -32,7 +32,11 @@
         android:id="@+id/fragment_3"
         android:name="com.inspirecoding.navcompdemo.fragments.Fragment_3"
         android:label="fragment_3"
-        tools:layout="@layout/fragment_3" />
+        tools:layout="@layout/fragment_3" >
+        <action
+            android:id="@+id/action_fragment_3_to_addToDoFragment"
+            app:destination="@id/addToDoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_4"
         android:name="com.inspirecoding.navcompdemo.fragments.Fragment_4"
@@ -52,4 +56,9 @@
         android:name="com.inspirecoding.navcompdemo.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <dialog
+        android:id="@+id/addToDoFragment"
+        android:name="com.inspirecoding.navcompdemo.fragments.AddToDoFragment"
+        android:label="fragment_add_to_do"
+        tools:layout="@layout/fragment_add_to_do" />
 </navigation>
