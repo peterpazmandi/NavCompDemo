@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/fragment_1">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/fragment_1"
@@ -44,7 +44,9 @@
         tools:layout="@layout/fragment_4" >
         <action
             android:id="@+id/action_fragment_4_to_fragment_5"
-            app:destination="@id/fragment_5" />
+            app:destination="@id/fragment_5"
+            app:popUpTo="@id/fragment_4"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/fragment_5"
@@ -61,4 +63,15 @@
         android:name="com.inspirecoding.navcompdemo.fragments.AddToDoFragment"
         android:label="fragment_add_to_do"
         tools:layout="@layout/fragment_add_to_do" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.inspirecoding.navcompdemo.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_fragment_1"
+            app:destination="@id/fragment_1"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>
