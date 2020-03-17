@@ -14,13 +14,6 @@ import kotlinx.android.synthetic.main.fragment_1.*
 
 class Fragment_1 : Fragment()
 {
-    override fun onStart()
-    {
-        super.onStart()
-
-        (activity as AppCompatActivity).supportActionBar?.show()
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View?
     {
         // Inflate the layout for this fragment
