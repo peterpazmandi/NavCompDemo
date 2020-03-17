@@ -3,6 +3,10 @@
 
     <string name="inspire_coding"><b>Inspire Coding</b></string>
     <string name="inspirecoding_dot_app">inspirecoding.app</string>
+    <string name="tutorial_title">
+        Navigation\n
+        Component
+    </string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
