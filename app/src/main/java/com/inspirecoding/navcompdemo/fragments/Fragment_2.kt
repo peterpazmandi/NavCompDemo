@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.navGraphViewModels
 
 import com.inspirecoding.navcompdemo.R
 import kotlinx.android.synthetic.main.fragment_2.*
