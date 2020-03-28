@@ -37,7 +37,11 @@
         android:id="@+id/fragment_4"
         android:name="com.inspirecoding.navcompdemo.fragments.Fragment_4"
         android:label="fragment_4"
-        tools:layout="@layout/fragment_4" />
+        tools:layout="@layout/fragment_4" >
+        <action
+            android:id="@+id/action_fragment_4_to_fragment_5"
+            app:destination="@id/fragment_5" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_5"
         android:name="com.inspirecoding.navcompdemo.fragments.Fragment_5"
